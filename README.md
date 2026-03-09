@@ -98,7 +98,7 @@ Geospatial visualisations and correlation analysis were created to identify acce
 
 The full analysis including visualisations and outputs can be viewed here:
 
-[View Project Report](melbourne_public_transport_accessibility_analysis_report.pdf)
+[View Project Report](melbourne_public_transport_accessibility_report.pdf)
 
 ---
 
