@@ -1,49 +1,35 @@
 # Evaluating Public Transport Accessibility to Places of Interest in Melbourne
 
 ## Project Overview
-This project analyses the accessibility of public transport infrastructure to key landmarks across Melbourne. The goal is to evaluate how easily residents and visitors can reach important places of interest using public transport such as buses, trams, and trains.
 
-By analysing spatial data and transport networks, the project identifies areas that are well served by public transport and highlights locations where accessibility can be improved.
+This project evaluates how accessible public transport is to major landmarks across Melbourne.  
+Using geospatial data and statistical analysis, the study identifies areas with strong transport connectivity and areas that require infrastructure improvement.
 
-The analysis combines geospatial analysis, statistical methods, clustering, and visualisation techniques to derive insights and propose recommendations for improving transport connectivity.
-
----
-
-## Objectives
-
-The main objectives of this project are:
-
-- Assess the accessibility of public transport to key landmarks in Melbourne
-- Calculate distances between landmarks and transport stops
-- Develop an Accessibility Index to quantify ease of access
-- Identify areas with poor public transport coverage
-- Use clustering techniques to group landmarks based on accessibility
-- Provide data-driven recommendations for improving transport infrastructure
+The project combines **data analysis, geospatial techniques, and clustering methods** to generate insights into Melbourne’s public transport accessibility.
 
 ---
 
-## Data Sources
+## Project Preview
 
-The datasets used in this project were obtained from **City of Melbourne Open Data**.
+This project analyses accessibility to:
 
-Datasets include:
+- Train stations
+- Tram stops
+- Bus stops
+- Major places of interest
 
-- Landmarks and Places of Interest
-- Bus Stops
-- Tram Stops
-- Train Stations
-- Pedestrian Counting System Data
-
-These datasets provide geospatial coordinates used to analyse accessibility patterns across Melbourne.
+The analysis produces accessibility scores and clusters landmarks based on transport availability.
 
 ---
 
 ## Technologies Used
 
-### Programming Language
+**Programming Language**
+
 - Python
 
-### Libraries
+**Libraries**
+
 - Pandas
 - NumPy
 - Matplotlib
@@ -51,86 +37,82 @@ These datasets provide geospatial coordinates used to analyse accessibility patt
 - Folium
 - Scikit-learn
 - Plotly
-- Requests
 
-These libraries were used for data cleaning, geospatial analysis, clustering, and visualisation.
+**Tools**
+
+- Jupyter Notebook
+- Git
+- GitHub
+
+---
+
+## Data Sources
+
+Data was obtained from the **City of Melbourne Open Data Portal**.
+
+Datasets include:
+
+- Places of interest
+- Bus stop locations
+- Tram stop locations
+- Train station locations
+- Pedestrian network data
 
 ---
 
 ## Methodology
 
-### 1. Data Collection
-Data was retrieved from the **City of Melbourne Open Data API**, including information on landmarks, bus stops, tram stops, and train stations.
+### Data Collection
+Public transport datasets were collected from the Melbourne open data API.
 
-### 2. Data Cleaning and Preparation
-The datasets were cleaned and processed to ensure consistency. Coordinate values were extracted and converted into latitude and longitude.
+### Data Cleaning
+Datasets were cleaned and transformed into geospatial format using latitude and longitude coordinates.
 
-### 3. Distance Calculation
-The **Haversine formula** was used to calculate distances between landmarks and the nearest transport stops.
+### Distance Calculation
+Distances between landmarks and transport stops were calculated using the **Haversine formula**.
 
-### 4. Accessibility Index
-An Accessibility Index was created to measure how easily each landmark can be accessed using public transport.
+### Accessibility Index
+An **Accessibility Index** was developed based on proximity to:
 
-The index combines proximity to:
-- Bus Stops
-- Tram Stops
-- Train Stations
+- Bus stops
+- Tram stops
+- Train stations
 
-Higher scores indicate better accessibility.
+### Clustering
+K-Means clustering was applied to group landmarks into accessibility categories.
 
-### 5. Exploratory Data Analysis
-Several visualisations were created to understand spatial patterns including:
-
-- Scatter plots
-- Correlation heatmaps
-- Pair plots
-
-### 6. Clustering Analysis
-K-Means clustering was applied to group landmarks based on accessibility levels. This helped identify well-connected and poorly connected locations.
-
-### 7. Spatial Visualisation
-Interactive maps were generated using **Folium** to visualise accessibility patterns across Melbourne.
+### Visualisation
+Geospatial visualisations and correlation analysis were created to identify accessibility patterns.
 
 ---
 
 ## Key Findings
 
-### Transport Accessibility Patterns
-Landmarks located near the **Melbourne CBD** show the highest accessibility levels. Outer suburban areas tend to have lower accessibility scores.
-
-### Clustering Insights
-Three clusters of landmarks were identified:
-
-- High Accessibility – Well served by multiple transport modes
-- Moderate Accessibility – Reasonable transport access
-- Low Accessibility – Limited public transport coverage
-
-### Areas Needing Improvement
-Several locations were identified as having poor public transport accessibility and could benefit from improved transport infrastructure.
+- Landmarks near the **Melbourne CBD** have the highest transport accessibility.
+- Outer suburban locations show lower accessibility scores.
+- Several areas could benefit from improved public transport coverage.
 
 ---
 
-## Recommendations
+## Project Report
 
-Based on the analysis, the following improvements are recommended:
+The full analysis including visualisations and outputs can be viewed here:
 
-- Introduce new bus stops near poorly connected landmarks
-- Improve transport service coverage in outer areas
-- Monitor pedestrian traffic to prioritise infrastructure upgrades
-- Continue evaluating accessibility using updated datasets
-
-These actions could significantly improve connectivity and accessibility across Melbourne.
+[View Project Report](melbourne_public_transport_accessibility_analysis_report.pdf)
 
 ---
 
-## Future Work
+## Repository Structure
 
-Potential future improvements include:
-
-- Incorporating real-time transport data
-- Predicting transport demand using machine learning
-- Using travel time analysis instead of only distance
-- Integrating pedestrian movement data
+```
+Public-Transport-Accessibility-Melbourne
+│
+├── README.md
+├── melbourne_public_transport_accessibility_analysis_report.pdf
+│
+└── notebooks
+    └── transport_accessibility_analysis.ipynb
+```
 
 ---
 
@@ -139,3 +121,5 @@ Potential future improvements include:
 **Emmanuel Clement Anthony**  
 Master of Data Science  
 Melbourne, Australia
+
+GitHub: https://github.com/emmanuel2199
