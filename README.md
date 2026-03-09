@@ -1,5 +1,12 @@
 # Evaluating Public Transport Accessibility to Places of Interest in Melbourne
 
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?logo=numpy)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-F7931E?logo=scikit-learn)
+![GeoPandas](https://img.shields.io/badge/GeoPandas-Geospatial%20Analysis-green)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualisation-blue)
+
 ## Project Overview
 
 This project evaluates how accessible public transport is to major landmarks across Melbourne.  
